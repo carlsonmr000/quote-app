@@ -1,12 +1,7 @@
 # Tech Assessment
 ### vueapp
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
+### Run program in localhost
 ```
 npm run serve
 ```
