@@ -11,7 +11,7 @@
       </tbody>
     </table>
 
-    <div>
+    <div class="button-container">
       <button class="button" v-on:click="onNextPage('Prev')">Previous</button>
       <button class="button" v-on:click="onNextPage('Next')">Next</button>
       <button class="button" v-on:click="onMovieClick">Movie</button>
@@ -44,7 +44,7 @@ export default {
       .then((res) => {
         // this.quotes = res.data
         const partial = [];
-        for (let i = 0; i < 5; i++) {
+        for (let i = 13; i < 18; i++) {
           partial.push(res.data[i]);
         }
 
@@ -127,18 +127,6 @@ export default {
       this.limit = 5;
       this.offset = 0;
     },
-          //   OnFilterClick() {
-  //     this.showFiltered = true;
-  //     if (this.search === "") {
-  //       this.filteredQuotes = this.quotes;
-  //     } else {
-  //       this.filteredQuotes = [];
-  //       this.quotes.forEach((quote) => {
-  //         if (quote.quote.toLowerCase().includes(this.search.toLowerCase()))
-  //           this.filteredQuotes.push(quote);
-  //       });
-  //     }
-  // },
   },
 };
 </script>
@@ -151,6 +139,11 @@ h3 {
   margin: 10px;
   border-radius: 6px;
   width: 86vw;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
 }
 
 .button {

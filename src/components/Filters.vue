@@ -61,7 +61,6 @@ export default {
         this.quotes.forEach((quote) => {
           if (quote.quote.toLowerCase().includes(this.search.toLowerCase()))
             this.filteredQuotes.push(quote);
-          console.log("display status", this.displayMore);
         });
       }
     },
