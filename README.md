@@ -1,7 +1,7 @@
 # Tech Assessment
 ### vueapp
 
-### Run program in localhost
+### Run program
 ```
 npm run serve
 ```
